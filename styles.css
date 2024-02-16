@@ -1,0 +1,465 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #020659;
+    font-family: Verdana, Gnevea, Tahoma, sans-serif;
+    margin: auto;
+}
+
+h1 {
+    font-size: 1.25em;
+}
+
+h2,
+h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p,
+dl,
+dd {
+    font-size: 1em;
+}
+
+footer p {
+    font-size: .75em;
+    margin: auto;
+}
+
+header {
+    background-color: #020873;
+    color: #ffffff;
+    width: 375px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav {
+    background-color: #030A8C;
+}
+
+main {
+    width: 375px;
+    margin: 0 auto;
+}
+
+ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    display: flex;
+    width: 100%;
+    color: #ffffff;
+    list-style-type: none;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+input {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+
+header li:first-of-type {
+    font-size: 30px;
+    font-weight: bold;
+    font-variant: small-caps;
+    position: absolute;
+    top: 9px;
+    left: 80px;
+}
+
+header li:nth-child(n+2) {
+    padding-left: 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+header li:nth-child(n+2) a:hover {
+    color:#590242;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.banner {
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(3, 10, 140, 1) 14%, rgba(0, 0, 0, 1) 100%);
+    padding: 25px 45px;
+}
+
+.banner h1 {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#trending {
+    background-color: #ffffff;
+    color: #590242;
+    padding-left: 10px;
+}
+
+#trending>h2 {
+    padding: 30px 0px 15px 15px;
+}
+
+#trending>div:last-of-type {
+    text-align: right;
+    padding: 20px 20px 40px 20px;
+}
+
+.more-trending {
+    color: #ffffff;
+    background-color: #590242;
+    border-radius: 5px;
+    bottom: -3rem;
+    font-size: 1em;
+    width: 150px;
+    height: 30px;
+
+}
+.more-trending:hover {
+    background-color: #030A8C;
+}
+
+.songs {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+
+}
+
+.songs section {
+    position: relative;
+}
+
+.songs section div {
+    bottom: 0px;
+    position: absolute;
+    background-color: #ffffff;
+    width: 290px;
+    opacity: 50%;
+    height: 45px;
+    padding: 5px 10px;
+}
+
+.songs section div h3 {
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.songs section div p {
+    font-size: small;
+}
+
+.songs section audio {
+    position: absolute;
+    top: 186px;
+    left: 0px;
+    opacity: 50%;
+}
+
+#twoplaylists {
+    background-color: #ffffff;
+    color: #590242;
+}
+
+#playlists {
+    background-color: #2699fb;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+#twoplaylists h2 {
+    padding: 20px 20px 40px 20px;
+}
+
+#playlists>div {
+    display: flex;
+    color: #ffffff;
+    background-color: #0d8dfb;
+    margin: 10px;
+}
+
+#playlists>div div {
+    text-align: center;
+}
+
+#playlists h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+#curated {
+    background-color: #030A8c;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+#curated>div {
+    display: flex;
+    color: #ffffff;
+    background-color: #020873;
+    margin: 10px;
+}
+
+#curated>div div {
+    text-align: center;
+}
+
+#curated h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+
+.panel-button {
+    text-align: right;
+    padding: 20px;
+}
+
+footer {
+    width: 375px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    height: 50px;
+    color: #590242;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+}
+
+    
+#trending ::-webkit-scrollbar {
+
+    width: 15px;
+
+}
+
+#trending ::-webkit-scrollbar-track {
+
+    box-shadow: inset 0 0 15px #590242;
+
+}
+
+#trending ::-webkit-scrollbar-thumb {
+
+    background: #590242;
+    border-radius: 5px;
+
+}
+
+#trending ::-webkit-scrollbar-thumb:hover {
+
+    background: #020659;
+
+}
+
+#twoplaylists ::-webkit-scrollbar {
+
+    width: 15px;
+
+}
+
+#twoplaylists ::-webkit-scrollbar-track {
+
+    box-shadow: inset 0 0 15px #030A8C;
+
+}
+
+#twoplaylists ::-webkit-scrollbar-thumb {
+
+    background:#020873;
+    border-radius: 5px;
+
+}
+
+#twoplaylists ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+@media screen and (min-width:834px) {
+    body, header, footer {
+        width: 834px;
+    }
+   
+    ul {
+        overflow: visible;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin-left: 220px;
+        padding-top: 5px;
+    }
+    
+    label {
+        display: none;
+    }
+
+    label span, input {
+        display: none;
+    }
+
+    header li:first-of-type {
+        left: 20px;
+    }
+
+    header li:nth-child(n+2) {
+        padding-left: 20px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #twoplaylists {
+        display: flex;
+    }
+    
+    nav {
+        padding-top: 8px;
+    }
+    
+    main {
+        width: 834px;
+    }
+}

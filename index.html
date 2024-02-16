@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>MuzakMaker- Smooth Jazz</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="dropdown">
+            <label for="dropdown"><span></span></label>
+            <ul>
+                <li><a href="#home">MuzakMaker</a></li>
+                <li><a href="#trending">TRENDING <br />SONGS</a></li>
+                <li><a href="#playlists">YOUR <br />PLAYLISTS</a></li>
+                <li><a href="#curated">CURATED <br />PLAYLISTS</a></li>
+                <li><a href="user"><img src="duke-silver.png" alt="user profile picture"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <h1>Smooth Jazz</h1>
+            <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented
+                crossover jazz became dominant in the 1980s and early 1990s.</p>
+
+        </div>
+
+
+        <section id="trending">
+            <!--Heading-->
+            <h2>Trending Songs</h2>
+
+            <!--Content-->
+            <div class="songs">
+                <section>
+                    <div>
+                        <h3>Aloma</h3>
+                        <p>Artist Cali</p>
+                    </div>
+
+                    <img src="aloma-cover.png"
+                        alt="image of a white dove soaring for the song Aloma by the artist named Cali">
+                    <audio controls>
+                        <source src="aloma.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+
+                </section>
+
+                <section>
+                    <div>
+                        <h3>My Road</h3>
+                        <p>Artist Nesterouk</p>
+                    </div>
+                    <img src="my-road-cover.png"
+                        alt="image of an empty road leading to a mountain range in the background for the song My Road by the artist Nesterouk">
+                    <audio controls>
+                        <source src="my-road.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </section>
+
+                <section>
+                    <div>
+                        <h3>Papaya</h3>
+                        <p>Artist Dredstudio</p>
+                    </div>
+                    <img src="papaya-cover.png"
+                        alt="image of a ripe papaya cut in half for the song Papaya by the artist Dredstudio">
+                    <audio controls>
+                        <source src="papaya.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </section>
+
+                <section>
+                    <div>
+                        <h3>Smoothies</h3>
+                        <p>Artist Black Rhomb</p>
+                    </div>
+                    <img src="smoothies-cover.png"
+                        alt="image of a strawberry smoothie in a mason jar with fresh ingredients of pineapple, strawberries, and bananas surrounding it for the song Smoothies by the artist Black Rhomb">
+                    <audio controls>
+                        <source src="smoothies.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </section>
+
+                <section>
+                    <div>
+                        <h3>Succesful Performance</h3>
+                        <p>Artist Ricky Bombino</p>
+                    </div>
+                    <img src="successful-performance-cover.png"
+                        alt="image of a white man with a red shirt, standing in front of a blue brick wall looking celebratory for the Successful Performance by the artist Ricky Bombino">
+                    <audio controls>
+                        <source src="successful-performance.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </section>
+
+            </div>
+
+            <!--Footer-->
+            <div>
+                <button class="more-trending">More trending</button>
+            </div>
+        </section>
+
+        <section id="twoplaylists">
+            <section>
+                <h2>Your Playlists</h2>
+                <div id="playlists">
+
+
+                    <div>
+                        <img src="best-of-2020-cover.png"
+                            alt="image of a glowing year of 2020 sign on a black background">
+                        <div>
+                            <h3>Best of 2020</h3>
+                            <p>The music that got you through the lock down.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="pumpkin-spice-cover.png" alt="image of a hot cup of a pumpkin spice espresso drink">
+                        <div>
+                            <h3>Pumpkin Spice</h3>
+                            <p>Creamy and spicy, just like your favorite autumnal latte.</p>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="quiet-storm-cover.png"
+                            alt="image of a lightning storm with pink and blue clouds intertwining">
+                        <div>
+                            <h3>Quiet Storm</h3>
+                            <p>Slow tempos and relaxed rhythms.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="smooth-jazz-cover.png"
+                            alt="image of an older white man wearing glasses in a green shirt and slightly smiling">
+                        <div>
+                            <h3>Smooth Jazz</h3>
+                            <p>The pioneers of smooth jazz</p>
+
+                        </div>
+
+
+                    </div>
+
+                    <div>
+                        <img src="smooth-study-cover.png" alt="image of a man's hand using a laptop on a wooden desk">
+                        <div>
+                            <h3>Smooth Study</h3>
+                            <p>Background music to keep you going while you study.</p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="panel-button">
+                    <button class="more-trending">All your playlists</button>
+                </div>
+            </section>
+
+            <section>
+                <h2>Curated Playlists</h2>
+                <div id="curated">
+                    <div class="scroll"></div>
+                    <div>
+                        <img src="boozy-brunch-cover.png"
+                            alt="image of a group of friends and their hands cheering their drinks">
+                        <div>
+                            <h3>Boozy Brunch</h3>
+                            <p>Light up the afternoon with these energetic hits.</p>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="dinner-party-cover.png"
+                            alt="image of a candle-lit dinner table with wine bottles and bowls of strawberries on the table">
+                        <div>
+                            <h3>Dinner Party</h3>
+                            <p>Background music to give your party life, but allow your guests to chat.</p>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="mellow-cover.png"
+                            alt="image of two people sitting on a park bench looking out over a sunset-lit landscape">
+                        <div>
+                            <h3>Mellow</h3>
+                            <p>Relax after a stressful day with this collection of extra smooth jazz.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="jazz-chill-cover.png" alt="image of a bed of red rose petals">
+
+                        <div>
+                            <h3>Jazz and Chill</h3>
+                            <p>Set the mood with these silky sounds.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="smooth-saxophone-cover.png"
+                            alt="image of a band with a saxophone player in focus of the picture">
+
+                        <div>
+                            <h3>Jazz Saxophone</h3>
+                            <p>The greatest collection of your sax favorites.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="panel-button">
+                    <button class="more-trending">More curated</button>
+                </div>
+                </section>
+            </section>
+
+    </main>
+    <footer>
+        <p>Copyright 2022 Smooth Jazz</p>
+    </footer>
+</body>
+
+</html>
